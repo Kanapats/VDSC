@@ -2,22 +2,26 @@
 Vision-based Fall Detection System for Senior Citizens using Computer Vision on Microcontroller
 
 ## 🔨 Usage
-For Fall Detection
-* open **https://ai-training.glitch.me/**
-* connect with your microbit and make sure you uploaded the main microbit code.
-* place **https://teachablemachine.withgoogle.com/models/Poit12UMC/** on the square frame.
-* choose your camera
-* click on **Ready!**
-
-For Person Tracking
-* preparation
-```bash
-pip install pipenv
-```
-* installation
+Installation
 ```bash
 git clone https://github.com/Kanapats/VDSC.git
-cd VDSC/tracking/
+pip install pipenv
+```
+
+For Fall Detection
+```bash
+cd VDSC/scripts/detection/
+pipenv shell
+pipenv install
+```
+* before run make sure you connect microbit with your computer and uploaded the main_vdsc microbit code.
+```bash
+python main.py
+```
+
+For Person Tracking
+```bash
+cd VDSC/scripts/tracking/
 pipenv shell
 pipenv install
 ```
